@@ -83,7 +83,6 @@ body {
 	z-index: -1;
 }
 
-
 a.category-badge > span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
@@ -97,7 +96,7 @@ a.category-badge > span.badge:hover {
     right: 10px;
 }
 
-.btt-link, 
+.btt-link,
 .update-link,
 .remove-item {
     cursor: pointer;
@@ -107,13 +106,13 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
-/* --------------Bootstrap Toasts --*/
+/* ------------------------------- bootstrap toasts */
 
 .message-container {
     position: fixed;
     top: 72px;
     right: 15px;
-    z-index: 99999999;
+    z-index: 99999999999;
 }
 
 .custom-toast {
@@ -121,7 +120,7 @@ input[name='q']::placeholder {
 }
 
 .toast-capper {
-    height: 2px
+    height: 2px;
 }
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
@@ -184,15 +183,15 @@ input[name='q']::placeholder {
   }
 }
 
-/* Allauth Form formatting */ 
+/* Allauth form formatting */
 
 .allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */ 
-    color: #6c757d;
+    margin-top: 1.5rem; /* mt-4 */
+    color: #6c757d; /* text-secondary */
 }
 
-.allauth-form-inner-content p input {
-    border-color: #000000;
+.allauth-form-inner-content input {
+    border-color: #000;
     border-radius: 0;
 }
 
@@ -238,12 +237,11 @@ input[name='q']::placeholder {
 	color: #17a2b8; /* text-info */
 }
 
-
 /* Product Form */
 
 .btn-file {
     position: relative;
-    overflow: hidden;   
+    overflow: hidden;
 }
 
 .btn-file input[type="file"] {
@@ -257,7 +255,7 @@ input[name='q']::placeholder {
 }
 
 .custom-checkbox .custom-control-label::before {
-    border-radius:0;
+    border-radius: 0;
     border-color: #dc3545;
 }
 
@@ -266,6 +264,8 @@ input[name='q']::placeholder {
     border-color: #dc3545;
     border-radius: 0;
 }
+
+
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
@@ -305,6 +305,7 @@ input[name='q']::placeholder {
 
     .navbar-toggler {
         padding: .6rem .6rem;
+        font-size: 1rem;
     }
 
     #delivery-banner h4 {
@@ -312,14 +313,14 @@ input[name='q']::placeholder {
     }
 
     .btn.btn-outline-black.rounded-0,
-    .bn.btn-black.rounded-0 {
-        padding: .375rem;
+    .btn.btn-black.rounded-0 {
+        padding: .375rem .375rem;
     }
 
     .btn.btn-outline-black.rounded-0.btn-lg,
-    .bn.btn-black.rounded-0.btn-lg {
+    .btn.btn-black.rounded-0.btn-lg {
         padding: .375rem .375rem;
-        font-size: 0.75rem;
+        font-size: .75rem;
     }
 
     .increment-qty, .decrement-qty {
